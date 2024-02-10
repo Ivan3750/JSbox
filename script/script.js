@@ -1,5 +1,5 @@
 const themebox = document.querySelector(".section__theme")
-fetch('../script/data.json')
+fetch('./script/data.json')
 .then(response => response.json())
 .then(data => {
     for(let  i = data.length; i != 0; i--){
