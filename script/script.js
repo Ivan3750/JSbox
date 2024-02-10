@@ -5,7 +5,7 @@ fetch('../script/data.json')
     for(let  i = data.length; i != 0; i--){
         themebox.innerHTML += `
         <a href="./pages/info.html">
-        <h2 class="theme-name">1 Знайомство з JS. Змінні. Типи даних. Взаємодія з користувачем</h2>
+        <h2 class="theme-name"></h2>
         </a>
         `
     }

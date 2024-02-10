@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+</style>
+<body>
+    <!-- Task 1 -->
+    <button class="btn_1" id="btn">Click</button>
+    <p class="txt_1" id="txt">Hej!</p>
+    <!-- Task 2 -->
+    <h1 class="title">JavaScript</h1>
+    <img src="https://play-lh.googleusercontent.com/rfWOJQVBHoAZ_B43v0ySFlLmJBLtksVGAxGaFRh2ex4nOmNQ86qzG4sYWV63IKrXlvI" alt="JS" class="js-img">
+    <!-- Task 3 -->
+    <a href="https://www.google.com/m" class="link">Google</a>
+    <img src="" alt="JS" class="js-img">
+    <!-- Task 4 -->
+    <ul class="list">
+        <li class="list__element">JavaScript</li>
+        <li class="list__element">HTML</li>
+        <li class="list__element">CSS</li>
+        <li class="list__element">PHP</li>
+
+    </ul>
+    <script src="app.js">
+        
+/* Task 1 */
+const btn = document.getElementById("btn")
+const txt = document.getElementById("txt")
+btn.innerHTML = "Click please!"
+txt.innerHTML = "Click please!"
+
+
+/* Task 2 */
+const JSimage = document.querySelector(".js-img")
+JSimage.src = "https://miro.medium.com/v2/resize:fit:1200/1*yUNfohs9jA6GCDmyCYJTvA@2x.png"
+
+/* Task 3 */
+const link = document.querySelector('.link')
+link.href = "https://www.youtube.com/"
+JSimage.alt = "JavaScript"
+/* Task 4 */
+const ListElement = document.querySelector(".list__element")
+ListElement.innerHTML = "JS"
+    </script>
+</body>
+</html>

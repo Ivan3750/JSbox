@@ -10,26 +10,21 @@ fetch('../script/info.json')
     const title = document.querySelector('.title');
     
     title.innerHTML =  dataElement.theme
-    const btnDOWN = document.createElement("a");
-btnDOWN.href = `../material/${dataElement.file}`;
-let parts = dataElement.file.split('.');
-let extension = parts[parts.length - 1];
-console.log(extension)
-btnDOWN.download = `${dataElement.theme}.${extension}`;
-btnDOWN.className = "download-btn";
-btnDOWN.textContent = "Download";
-console.log(btnDOWN);
-downloadBox.appendChild(btnDOWN);
-    /* for (let i = 0; i <p dataElement.task.length; i++) {
-        
-        taskbox.innerHTML += `
-        <p class="task-name">Створити змінну з іменем age і присвоїти їй значення свого віку. Вивести значення цієї змінної в консоль.</p>
-        
-        `
-        
-    } */
-    /*taskName.forEach((element, index)=>{
-    }) */
+
+
+    if(dataElement.file != ""){
+        const btnDOWN = document.createElement("a");
+    btnDOWN.href = `../material/${dataElement.file}`;
+    let parts = dataElement.file.split('.');
+    let extension = parts[parts.length - 1];
+    console.log(extension)
+    btnDOWN.download = `${dataElement.theme}.${extension}`;
+    btnDOWN.className = "download-btn";
+    btnDOWN.textContent = "Download";
+    console.log(btnDOWN);
+    downloadBox.appendChild(btnDOWN);
+
+    }
     for (let i = 0; i != dataElement.task.length; i++) {
         taskbox.innerHTML += `<p class="task-name">Створити змінну з іменем age і присвоїти їй значення свого віку. Вивести значення цієї змінної в консоль.</p>`;
         const taskName = document.querySelectorAll('.task-name');        
