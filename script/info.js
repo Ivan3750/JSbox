@@ -1,6 +1,6 @@
 let IndexTheme = Number.parseInt(sessionStorage.getItem("IndexTheme")) + 1
 const taskbox = document.querySelector('.task-box');
-fetch('../json/info.json')
+fetch('./json/info.json')
 .then(response => response.json())
 .then(data => {
     const downloadBox = document.querySelector('.download-box');
