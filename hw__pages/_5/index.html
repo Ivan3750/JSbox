@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p>Task 1</p>
+    <button class="button" data-action = "open-modal" id="open">Open modal</button>
+    <div class="backdrop">
+        <div class="modal">
+            <h2>Modal window</h2>
+            <p>
+                In user interface design for computer applications, a 
+    modal window is a graphical control element subordinate to an alapplication's main
+    window. It creates a mode that disables the main window
+    but keeps it
+    visible, with the modal window as a child window in
+    front of it. Users
+    must interact with the modal window before they can
+    return to the
+    parent application. This avoids interrupting the
+    workflow on the main
+    window. Modal windows are sometimes called heavy
+    windows or modal
+    dialogs because they often display a dialog box.
+            </p>
+            <button class="button" type="button" data-action="close-modal" id="close">Close</button>
+        </div>
+    </div>
+    <p>Task 2</p>
+    <form class="form">
+        <p>Choose a color:</p>
+        <label>
+            <input type="radio" name="color" id="color" class="color" value="white" checked>
+            <span>White</span>
+        </label>
+        <label>
+            <input type="radio" name="color" id="color" class="color" value="red" >
+            <span>Red</span>
+        </label>
+        <label>
+            <input type="radio" name="color" id="color" class="color" value="green" >
+            <span>Green</span>
+        </label>
+    </form>
+
+    <p>Task 3</p>
+    <input type="text" name="" id="name-input" placeholder="Ваше ім'я">
+    <h1>Привіт, <span id="name-output">незнайомець</span></h1>
+    <p>Task 4</p>
+    <input type="text" id="validation-input" data-length="6" placeholder="Введи 6 символів">
+    <p>Task 5</p>
+    <div class="box">
+        <input type="range" id="font-size-control" width="100px" value="30">
+        <span id="text">Абракадабра!</span>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

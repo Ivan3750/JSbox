@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="./app.js"></script>
+
+    <div class="TASK_1 task">
+        <select name="" id="" class="list" >
+            <option class="list-element" value="None">Обрати</option>
+            <option class="list-element" value="Coffe">Кофе</option>
+            <option class="list-element" value="Tea">Чай</option>
+            <option  class="list-element" value="Juice">Сік</option>
+        </select>
+        <div class="block">
+            <p class="Selected-txt">-</p>
+        </div>
+    </div>
+    <div class="TASK_2 task">
+        <input type="text" class="days-input">
+        <p class="days-output"></p>
+    </div>
+    <div class="TASK_3 task">
+        <label for="monthInput">Введіть номер місяця (1-12):</label>
+        <input type="text" id="monthInput">
+        <button onclick="getSeason()">Отримати пору року</button>
+    </div>
+    <div class="TASK_4 task">
+        <label for="monthInput">Введіть номер місяця (1-12):</label>
+<input type="text" id="monthInput">
+<button onclick="getDaysInMonth()">Отримати кількість днів</button>
+    </div>
+    <div class="TASK_5 task">
+        <label for="colorInput">Введіть назву кольору:</label>
+        <input type="text" id="colorInput">
+        <button onclick="performAction()">Виконати дію</button>
+    </div>
+    <div class="TASK_6 task">
+        <label for="num1">Введіть перше число:</label>
+        <input type="text" id="num1">
+        <label for="num2">Введіть друге число:</label>
+        <input type="text" id="num2">
+    
+        <label for="operation">Оберіть операцію:</label>
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+    
+        <button onclick="calculate()">Обчислити</button>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>

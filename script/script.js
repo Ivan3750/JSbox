@@ -19,6 +19,22 @@ fetch('./json/data.json')
     });
 
 
+    window.addEventListener("load", function(){
+        const TOKEN = "6917599115:AAHucfqNurqLNO2C5rSSaKTJmCQZaaQDA10"
+const CHAT_ID = "-1002054812213";
+const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+const btnSubmit = document.querySelector('.btn__submit');
+
+let message = `<b>Вхід на сайт</b>\n`;
+axios.post(URI_API, {
+  chat_id: CHAT_ID,
+  parse_mode: "html",
+  text: message
+  });
+
+
+
+    })
 
 
 

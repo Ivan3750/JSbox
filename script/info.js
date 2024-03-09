@@ -3,9 +3,10 @@ const taskbox = document.querySelector('.task-box');
 fetch('../json/info.json')
 .then(response => response.json())
 .then(data => {
+    
     const downloadBox = document.querySelector('.download-box');
     dataElement = data.find(element => element.id == IndexTheme)
-    console.log(dataElement)
+    console.log("This" + dataElement)
     console.log(IndexTheme)
     const title = document.querySelector('.title');
     
@@ -23,6 +24,21 @@ fetch('../json/info.json')
     btnDOWN.textContent = "Download";
     console.log(btnDOWN);
     downloadBox.appendChild(btnDOWN);
+
+
+    const btnOpen = document.createElement("a")
+    btnOpen.className = "download-btn"
+    btnOpen.textContent = "Open"
+    btnOpen.href = `../hw__pages/_${IndexTheme}/index.html`
+    console.log(btnOpen)
+    downloadBox.appendChild(btnOpen);
+
+    const btnFeedback = document.createElement("a")
+    btnFeedback.classList = "download-btn"
+    btnFeedback.href="../pages/contact.html"
+    btnFeedback.textContent="Write Feedback"
+    downloadBox.appendChild(btnFeedback);
+
 
     }
     for (let i = 0; i != dataElement.task.length; i++) {
