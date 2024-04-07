@@ -29,7 +29,7 @@ fetch('../json/info.json')
     const btnOpen = document.createElement("a")
     btnOpen.className = "download-btn"
     btnOpen.textContent = "Open"
-    btnOpen.href = `../hw__pages/_${IndexTheme}/page.html`
+    btnOpen.href = `./${IndexTheme}/index.html`
     console.log(btnOpen)
     downloadBox.appendChild(btnOpen);
 
