@@ -1,0 +1,19 @@
+{
+    "code": "4",
+  "name": "FRONT END 4",
+  "moduleTitle": "1 Знайомство з JS. Змінні. Типи даних. Взаємодія з користувачем",
+  "moduleDescription": "",
+  "topics": [
+    {
+    
+        "title": "Оптимізація подій",
+      "description": "Introduction to the course and setup instructions.",
+      "files": [
+        {
+          "url": "/4/1/index.html",
+          "description": "Setup guide"
+        }
+      ]
+    }
+  ]
+}

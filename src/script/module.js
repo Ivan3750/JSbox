@@ -10,7 +10,6 @@ fetch(`/api/themes/${location.pathname.substring(location.pathname.lastIndexOf("
                     themebox.innerHTML += `
                         <div class="theme">
                             <h2 class="theme-name">${topic.title}</h2>
-                            <p>${topic.description}</p>
                             <div class="theme-links"> 
                                 ${topic.files.map(file => `
                                     <a href="${file.url}" download class="theme-download" aria-label="Download ${file.description}">Download</a>
