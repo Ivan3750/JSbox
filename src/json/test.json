@@ -1,0 +1,209 @@
+{
+    "code": "3",
+  "name": "1 Знайомство з JS. Змінні. Типи даних. Взаємодія з користувачем",
+  "moduleTitle": "1 Знайомство з JS. Змінні. Типи даних. Взаємодія з користувачем",
+  "moduleDescription": "",
+  "topics": [
+    {
+    
+        "title": "Знайомство з JS. Змінні. Типи даних. Взаємодія з користувачем",
+      "description": "Introduction to the course and setup instructions.",
+      "files": [
+        {
+          "url": "/3/1/index.html",
+          "description": "Setup guide"
+        }
+      ]
+    },
+    {
+        "title": "Основні оператори. Числа",
+      "description": "Learn about different data types and variables.",
+      "files": [
+        {
+            "url": "/3/2/index.html",
+            "description": "Data types overview"
+        }
+      ]
+    },
+    {
+        "title": "Рядки",
+      "description": "Introduction to if-else statements and loops.",
+      "files": [
+        {
+            "url": "/3/3/index.html",
+            "description": "Control structures guide"
+        }
+      ]
+    },
+    {
+        "title": "DOM",
+      "description": "Learn about defining and using functions.",
+      "files": [
+        {
+            "url": "/3/4/index.html",
+            "description": "Functions overview"
+        }
+      ]
+    },
+    {
+        "title": "Події",
+      "description": "Introduction to arrays and array manipulation.",
+      "files": [
+        {
+            "url": "/3/5/index.html",
+            "description": "Arrays guide"
+        }
+      ]
+    },
+    {
+        "title": "Логічні оператори. Розгалуження.",
+      "description": "Learn about objects and their properties.",
+      "files": [
+        {
+            "url": "/3/6/index.html",
+            "description": "Objects overview"
+        }
+      ]
+    },
+    {
+        "title": "Розгалуження. Інструкція switch. Область видимості. Практика",
+      "description": "Introduction to manipulating the DOM.",
+      "files": [
+        {
+            "url": "/3/7/index.html",
+            "description": "DOM manipulation guide"
+        }
+      ]
+    },
+    {
+        "title": "Цикли",
+      "description": "Learn about handling events in JavaScript.",
+      "files": [
+        {
+            "url": "/3/8/index.html",
+            "description": "Event handling guide"
+        }
+      ]
+    },
+    {
+        "title": "Масиви. Ітерація",
+      "description": "Introduction to asynchronous programming.",
+      "files": [
+        {
+            "url": "/3/9/index.html",
+            "description": "Async programming guide"
+        }
+      ]
+    },
+    {
+        "title": "Методи масиву",
+      "description": "Learn how to make HTTP requests using the Fetch API.",
+      "files": [
+        {
+            "url": "/3/10/index.html",
+            "description": "Fetch API guide"
+        }
+      ]
+    },
+    {
+        "title": "Функції",
+      "description": "Introduction to promises and their usage.",
+      "files": [
+        {
+            "url": "/3/11/index.html",
+            "description": "Promises guide"
+        }
+      ]
+    },
+    {
+        "title": "Колбек і стрілочні функції.",
+      "description": "Learn about error handling in JavaScript.",
+      "files": [
+        {
+            "url": "/3/12/index.html",
+            "description": "Error handling guide"
+        }
+      ]
+    },
+    {
+        "title": "Об’єкти. Створення, властивості, методи об'єкту",
+      "description": "Introduction to new features in ES6.",
+      "files": [
+        {
+            "url": "/3/13/index.html",
+            "description": "ES6 features guide"
+        }
+      ]
+    },
+    {
+        "title": "Об’єкти. Перебір об'єкту",
+      "description": "Learn about JavaScript modules and how to use them.",
+      "files": [
+        {
+            "url": "/3/14/index.html",
+            "description": "Modules guide"
+        }
+      ]
+    },
+    {
+        "title": "Об’єкти. Деструкткризація об'єктів",
+      "description": "Introduction to using Webpack for module bundling.",
+      "files": [
+        {
+            "url": "/3/15/index.html",
+            "description": "Webpack guide"
+        }
+      ]
+    },
+    {
+        "title": "Імперативний і декларативний код. Чисті функції",
+      "description": "Learn about using Babel for JavaScript transpiling.",
+      "files": [
+        {
+            "url": "/3/16/index.html",
+            "description": "Babel guide"
+        }
+      ]
+    },
+    {
+        "title": "Перебираючі методи масиву",
+      "description": "Introduction to testing in JavaScript.",
+      "files": [
+        {
+            "url": "/3/17/index.html",
+            "description": "Testing guide"
+        }
+      ]
+    },
+    {
+        "title": "ООП",
+      "description": "Learn about debugging JavaScript code.",
+      "files": [
+        {
+            "url": "/3/18/index.html",
+            "description": "Debugging guide"
+        }
+      ]
+    },
+    {
+        "title": "DOM (Частина 2)",
+      "description": "Introduction to optimizing JavaScript performance.",
+      "files": [
+        {
+            "url": "/3/19/index.html",
+            "description": "Performance optimization guide"
+        }
+      ]
+    },
+    {
+        "title": "Події. Події клавіатури та миші",
+      "description": "Learn about deploying JavaScript applications.",
+      "files": [
+        {
+            "url": "/3/20/index.html",
+            "description": "Deployment guide"
+        }
+      ]
+    }
+  ]
+}
