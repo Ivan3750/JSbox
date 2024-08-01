@@ -6,9 +6,6 @@ const FileSchema = new Schema({
   url: {
     type: String,
     required: true
-  },
-  description: {
-    type: String
   }
 });
 
@@ -17,9 +14,6 @@ const TopicSchema = new Schema({
   title: {
     type: String,
     required: true
-  },
-  description: {
-    type: String
   },
   files: [FileSchema]
 });
@@ -33,9 +27,6 @@ const ModuleSchema = new Schema({
   title: {
     type: String,
     required: true
-  },
-  description: {
-    type: String
   },
   topics: [TopicSchema]
 });
@@ -70,5 +61,5 @@ dbConnection.once('open', () => {
 
 // Export models
 module.exports = {
-  MainModel,
+  MainModel,ModuleSchema
 };

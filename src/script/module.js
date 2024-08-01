@@ -1,4 +1,19 @@
 const themebox = document.querySelector(".section__theme");
+
+let moduleIndex = location.pathname.substring(location.pathname.lastIndexOf("/") + 1)
+
+let diferentIndex = 3
+const gradients = [
+    { start: 'rgb(255, 187, 0)', end: 'rgb(84, 62, 0)' },
+    { start: 'rgb(112, 193, 77)', end: 'rgb(37, 61, 27)' },
+    { start: 'rgb(50, 197, 255)', end: 'rgb(0, 81, 95)' },
+    { start: 'rgb(1, 145, 255)', end: 'rgb(0, 63, 111)' }
+];
+
+
+
+
+
 fetch(`/api/themes/${location.pathname.substring(location.pathname.lastIndexOf("/") + 1)}`)
 .then(response => response.json())
 .then(data => {
@@ -8,19 +23,26 @@ fetch(`/api/themes/${location.pathname.substring(location.pathname.lastIndexOf("
             if (Array.isArray(module.topics)) {
                 module.topics.forEach((topic, index) => {
                     themebox.innerHTML += `
-                        <div class="theme">
+                        <div class="theme" >
                             <h2 class="theme-name">${topic.title}</h2>
                             <div class="theme-links"> 
                                 ${topic.files.map(file => `
-                                    <a href="${file.url}" download class="theme-download" aria-label="Download ${file.description}">Download</a>
-                                    <a href="${file.url}" class="theme-view" aria-label="View ${file.description}">View</a>
+                                    <a href="/api/download/${moduleIndex}/${index + 1}"  download class="theme-download" aria-label="Download  ${file.description}"><img src="../images/download.svg" class="link-icon" alt=""></a>
+                                    <a href="${file.url}" class="theme-view" aria-label="View ${file.description}"><img src="../images/view.svg" class="link-icon" alt=""></a>
                                 `).join('')}
                             </div>
                         </div>
                     `;
                 });
 
-                // Attach event listeners after all HTML is inserted
+
+                const themes = document.querySelectorAll('.theme');
+                themes.forEach((theme)=>{
+                    theme.style.background = /* `linear-gradient(180deg, ${gradients[moduleIndex - diferentIndex].start}, 
+                    ${gradients[moduleIndex - diferentIndex].end} 100%)`; */ gradients[moduleIndex - diferentIndex].start
+                })
+            
+            
                 document.querySelectorAll(".theme-name").forEach((element, index) => {
                     element.addEventListener("click", () => {
                         sessionStorage.setItem("IndexTheme", index);

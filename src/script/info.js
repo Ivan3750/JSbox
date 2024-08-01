@@ -1,5 +1,27 @@
 let IndexTheme = Number.parseInt(sessionStorage.getItem("IndexTheme")) + 1
 const taskbox = document.querySelector('.task-box');
+
+const theme = document.querySelectorAll('.theme');
+
+let diferentIndex = 2
+const gradients = [
+    { start: 'rgb(255, 187, 0)', end: 'rgb(84, 62, 0)' },
+    { start: 'rgb(112, 193, 77)', end: 'rgb(37, 61, 27)' },
+    { start: 'rgb(50, 197, 255)', end: 'rgb(0, 81, 95)' },
+    { start: 'rgb(1, 145, 255)', end: 'rgb(0, 63, 111)' }
+];
+
+
+window.addEventListener("load", ()=>{
+    theme.style.background = `linear-gradient(180deg, ${gradient[IndexTheme - diferentIndex].start}, 
+                                                        ${gradient[IndexTheme - diferentIndex].end} 100%)`;
+                                                    })
+                                                    console.log("d")
+
+
+
+
+
 fetch('../json/info.json')
 .then(response => response.json())
 .then(data => {
